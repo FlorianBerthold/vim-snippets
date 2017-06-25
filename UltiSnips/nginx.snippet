@@ -2,7 +2,7 @@
 priority 1
 
 snippet MAIN "nginx.conf"
-  user ${1:user};
+  user $0;
   worker_processes auto;
   pid /run/nginx.pid;
 
@@ -48,3 +48,4 @@ snippet MAIN "nginx.conf"
     include /etc/nginx/conf.d/*.conf;
     include /etc/nginx/sites-enabled/*;
     }:
+endsnippet
